@@ -18,7 +18,7 @@ $mint: #78d8da;
 $yellow: #ffc77c;
 $light_grey: #f0f0f0;
 $dark_grey: #bbbbbb;
-$black: #24232b;
+$black: #222129;
 
 @mixin yeseva {
   font-weight: 400;
@@ -529,5 +529,107 @@ a {
 }
 
 // ABOUT
+.about_me {
+  overflow-x: hidden;
+}
 
+.ara {
+  margin-top: 2.5rem;
+  width: 20rem;
+  height: 16.5rem;
+  background-image: url("../images/colors.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  img {
+    width: 18rem;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 5.8rem;
+  }
+}
+
+.am {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $black;
+}
+
+.text_p1 {
+  text-align: justify;
+}
+
+.nina {
+  background-color: rgb(231, 175, 210);
+  width: 30rem;
+  height: 28rem;
+  border-radius: 50%;
+  margin-left: 10rem;
+  margin-top: 4rem;
+}
+
+.pinorra {
+  border-start-start-radius: 15rem;
+  border-end-start-radius: 13rem;
+}
+
+.random_circle1 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: rgba(0, 128, 128, 0.397);
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.random_circle2 {
+  width: 18rem;
+  height: 17rem;
+  border-radius: 50%;
+  background-color: rgba(255, 192, 203, 0.767);
+  margin-top: 5rem;
+}
+
+.gardening {
+  margin-top: 20rem;
+  background-color: $yellow;
+}
+
+.plantas {
+  margin-left: 10rem;
+}
+
+.baking {
+  background-color: $cornflower;
+}
+
+.baked {
+  width: 22rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+.dance {
+  transform: rotate(12deg);
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 8rem;
+  width: 20rem;
+  margin-left: 5rem;
+  margin-top:2rem;
+}
+
+.friday_karaoke {
+  margin-top: 8rem;
+  margin-left: 5rem;
+}
+
+.codes {
+  width: 25rem;
+  height: 15rem;
+  margin-top: 6.5rem;
+  margin-left: 2.5rem;
+}
