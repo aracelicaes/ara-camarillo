@@ -1,0 +1,683 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+$white: #ffffff;
+$cornflower: #6fa8dc;
+$dark_purple: rgb(87, 11, 87);
+$puce: #d9b3d9;
+$hot_pink: #d9489c;
+$rose_pink: #f5bdc6;
+$soft_pink: #ffe6e2;
+$turquesa: #00a1a7;
+$jade: #84d0d1;
+$mint: #78d8da;
+$yellow: #ffc77c;
+$light_grey: #f0f0f0;
+$dark_grey: #bbbbbb;
+$black: #222129;
+
+@mixin yeseva {
+  font-weight: 400;
+  font-family: 'Yeseva One', cursive;
+}
+
+@mixin poppins-light {
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin poppins-regular {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin poppins-medium {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin poppins-bold {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+$layout-breakpoint-large: 990px;
+$layout-breakpoint-largest: 1200px;
+$layout-breakpoint-extra-large: 1600px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include yeseva;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pink-bck {
+  background-color: $rose_pink !important;
+}
+
+.mint-bck {
+  background-color: $mint !important;
+}
+
+.turquesa-bck {
+  background-color: $turquesa !important;
+}
+
+.jade-bck {
+  background-color: $jade !important;
+}
+
+.grey-bck {
+  background-color: $dark_grey !important;
+}
+
+.yellow-bck {
+  background-color: $yellow !important;
+}
+
+.soft-bck {
+  background-color: $soft_pink !important;
+}
+
+.purple-bck {
+  background-color: $dark_purple !important;
+}
+
+.puce-bck {
+  background-color: $puce !important;
+}
+
+.blue-bck {
+  background-color: $cornflower !important;
+}
+
+.hpink-bck {
+  background-color: $hot_pink !important;
+}
+
+.pink:hover {
+  color: $rose_pink;
+  text-decoration: none;
+}
+
+.pinker:hover {
+  color: $hot_pink;
+  text-decoration: none;
+}
+
+.blue:hover {
+  color: $cornflower;
+  text-decoration: none;
+}
+
+.green:hover {
+  color: $turquesa;
+  text-decoration: none;
+}
+
+.yellow:hover {
+  color: $yellow;
+  text-decoration: none;
+}
+
+// LOGOS AND NAVS
+
+.light_nav {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.light_nav_logo {
+  text-align: center;
+  h1 {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.dark_nav {
+  background-color: $black;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.logo {
+  img {
+    width: 4.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+.dark_nav_items {
+  a {
+    list-style-type: none;
+    margin-right: 3rem;
+    
+    @include yeseva;
+
+    font-size: 1.2rem;
+    color: $light_grey;
+  }
+
+  #contact_top {
+    margin-right: 0;
+  }
+ 
+  a:active {
+    border-bottom: 0.15rem solid $rose_pink;
+    color: $rose_pink;
+  }
+
+}
+
+// GREETING
+
+#greeting {
+  margin: 2.5rem 0;
+}
+
+.hi {
+  padding-left: 7.5rem;
+  padding-top: 5rem;
+}
+
+.intro {
+  @include poppins-medium;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.greeting_buttons {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.see_work {
+  border: 0.25rem solid $black;
+  padding-top: 0.8rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    border: 0.25rem solid $turquesa;
+    color: $turquesa;
+    text-decoration: none;
+  }
+
+  p {
+    @include poppins-medium;
+    color: $black;
+    margin-bottom: 0.8rem !important;
+    font-size: 18px;
+
+    &:hover {
+      color: $turquesa;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.more_about {
+  background-color: $hot_pink;
+  color: $black;
+  padding-top: 0.95rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $rose_pink;
+    color: $black;
+    text-decoration: none;
+  }
+
+  p {
+    @include poppins-medium;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+  }
+}
+
+.icon_li {
+  font-size: 2.5rem;
+  color: $black;
+  margin-right: 0.8rem;
+}
+
+.bp_circle {
+  background-image: url("../images/blue\ pink.svg");
+  margin-right: 1.5rem;
+  margin-top: 0.6rem;
+  width: 30rem;
+  height: 27rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formal_ara {
+  width: 22rem;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 10%;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+}
+
+// SECTION TITLES
+
+.title {
+  letter-spacing: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+// PORTFOLIO
+.portfolio_section {
+  padding: 0 2rem;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.left_arrow,
+.right_arrow {
+  font-size: 4rem;
+  cursor: pointer;
+  color: $black;
+}
+
+.circle {
+  width: 37rem;
+  height: 35rem;
+  background-color: $yellow;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: -1;
+}
+
+.mockup {
+  width: 29rem;
+  position: absolute;
+  top: 7rem;
+  left: 4rem;
+  z-index: 0
+}
+
+.circle2 {
+  width: 37rem;
+  height: 36rem;
+  background-color: white;
+  opacity: 70%;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.mockup:hover + .circle2 {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.right {
+  h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    @include poppins-light();
+
+    font-size: 1rem;
+  }
+
+  .description_list {
+    margin-left: 3rem;
+  }
+
+}
+
+.built_with {
+  @include poppins-medium;
+  margin-bottom: 1rem;
+}
+
+.bw {
+  padding: 0.5rem 0.8rem;
+  color: white;
+  border-radius: 2px;
+}
+
+.html {
+  background-color: $turquesa;
+}
+
+.css {
+  background-color: $hot_pink;
+}
+
+.links {
+  @include poppins-medium;
+
+  .sc {
+    background-color: $cornflower;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .lv {
+    background-color: $black;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+// ARTICLES
+.article_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.article_img {
+  width: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.article_content {
+  width: 20rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.article_title {
+  text-align: left;
+  text-decoration: none;
+  color: $black;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: $cornflower;
+    text-decoration: none;
+  }
+}
+
+.article_date {
+  font-size: 0.8rem;
+  border-bottom: 2px solid $cornflower;
+}
+
+.article_date,
+.article_text {
+  @include poppins-medium;
+}
+
+.article_text {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+// CONTACT
+.contact_bottom {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.contact_sqr {
+  width: 100%;
+  height: 25vh;
+  background-image: url("../images/circled\ rectangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ara_contact {
+  color: $white;
+  margin-top: 4rem;
+}
+
+.bottom_rectangle {
+  background-color: #222129;
+  max-width: 100%;
+  margin-top: -2.5rem;
+}
+
+.dark_rectangle {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.invite {
+  color: $white;
+
+  @include poppins-medium;
+
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+}
+
+.resume_button {
+  text-decoration: none;
+
+  @include yeseva;
+
+  font-size: 1rem;
+  background-color: $soft_pink;
+  padding: 1rem 1.5rem;
+  color: $black;
+
+  span {
+    letter-spacing: 0.02rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $jade;
+    color: $black;
+  }
+}
+
+
+// FOOTER
+
+.sm_rectangle {
+  background-color: #222129;
+  max-width: 100%;
+  text-align: center;
+  color: $white;
+  padding-bottom: 1rem;
+}
+
+.arrow_up {
+  color: $soft_pink;
+  font-size: 2rem;
+
+  &:hover {
+    color: $jade;
+  }
+}
+
+.footer_sm {
+  a {
+    color: $white;
+  }
+
+  margin: 1rem 0;
+}
+
+// ABOUT
+.about_me {
+  overflow-x: hidden;
+}
+
+.ara {
+  margin-top: 2.5rem;
+  width: 20rem;
+  height: 16.5rem;
+  background-image: url("../images/colors.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  img {
+    width: 18rem;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 5.8rem;
+  }
+}
+
+.am {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $black;
+}
+
+.text_p1 {
+  text-align: justify;
+}
+
+.nina {
+  background-color: rgb(231, 175, 210);
+  width: 30rem;
+  height: 28rem;
+  border-radius: 50%;
+  margin-left: 10rem;
+  margin-top: 4rem;
+}
+
+.pinorra {
+  border-start-start-radius: 15rem;
+  border-end-start-radius: 13rem;
+}
+
+.random_circle1 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: rgba(0, 128, 128, 0.397);
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.random_circle2 {
+  width: 18rem;
+  height: 17rem;
+  border-radius: 50%;
+  background-color: rgba(255, 192, 203, 0.767);
+  margin-top: 5rem;
+}
+
+.gardening {
+  margin-top: 20rem;
+  background-color: $yellow;
+}
+
+.plantas {
+  margin-left: 10rem;
+}
+
+.baking {
+  background-color: $cornflower;
+}
+
+.baked {
+  width: 22rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+.dance {
+  transform: rotate(12deg);
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 8rem;
+  width: 20rem;
+  margin-left: 5rem;
+  margin-top:2rem;
+}
+
+.friday_karaoke {
+  margin-top: 8rem;
+  margin-left: 5rem;
+}
+
+.codes {
+  width: 25rem;
+  height: 15rem;
+  margin-top: 6.5rem;
+  margin-left: 2.5rem;
+}
+
+.icons_display {
+  width: 50rem !important;
+  margin-bottom: 1rem;
+}
+
+.icon_box {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: $light_grey;
+
+  img {
+    width: 64px;
+    height: 50px;
+  }
+}
+
+.icon_name {
+  @include poppins-medium;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.thanks_li {
+  text-decoration: none;
+  color: $hot_pink;
+
+  @include poppins-medium;
+
+  &:hover {
+    color: $turquesa;
+    text-decoration: none;
+  }
+}
