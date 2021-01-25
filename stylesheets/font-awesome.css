@@ -3547,7 +3547,7 @@ readers do not read off random characters that represent icons */
   content: "\f11a";
 }
 
-.fa-meh-blank:before {
+.fa-meh-_blank:before {
   content: "\f5a4";
 }
 

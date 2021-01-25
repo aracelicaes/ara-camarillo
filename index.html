@@ -34,27 +34,28 @@
         <h1 id="hi_there">Hello! I'm Ara, a Full Stack Developer.</h1>
         <p class="intro">I'm a Full Stack Developer with knowledge of HTML, CSS, Ruby, Rails, Javascript, React, and Redux. I love the thrill and satisfaction that comes from seeing the designs come to life through stylesheets and functional web apps.  I'm a big fan of keeping clean readable code and listening to music while coding. Feel free to checkout my work!</p>
         <div class="greeting_buttons d-flex">
-          <a class="see_work"><p>See My Work</p></a>
-          <a class="more_about ml-4"><p>More About Me</p></a>
+          <a href="#portfolio" class="see_work"><p>See My Work</p></a>
+          <a href="about.html" class="more_about ml-4"><p>More About Me</p></a>
         </div>
         <div class="sm_icons">
-          <a href="https://twitter.com/Ara_CE_93" class="icon_li pinker"><i class="fab fa-twitter-square icon"></i></a>
-          <a href=" www.linkedin.com/in/ara-camarillo" class="icon_li blue"><i class="fab fa-linkedin icon"></i></a>
-          <a href="https://github.com/aracelicaes" class="icon_li yellow"><i class="fab fa-github-square icon"></i></a>
-          <a href="https://www.instagram.com/aracelicaes/" class="icon_li green"><i class="fab fa-instagram icon"></i></a>
-          <a href="mailto:arace0393@gmail.com" class="icon_li pink"><i class="fas fa-envelope icon"></i></a>
+          <a href="https://twitter.com/Ara_CE_93" class="icon_li pinker" target="_blank"><i class="fab fa-twitter-square icon"></i></a>
+          <a href="https://www.linkedin.com/in/ara-camarillo/" class="icon_li blue" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+          <a href="https://github.com/aracelicaes" class="icon_li yellow" target="_blank"><i class="fab fa-github-square icon"></i></a>
+          <a href="https://www.instagram.com/aracelicaes/" class="icon_li green" target="_blank"><i class="fab fa-instagram icon"></i></a>
+          <a href="mailto:arace0393@gmail.com" class="icon_li pink" target="_blank"><i class="fas fa-envelope icon"></i></a>
         </div>
       </div>
       <div class="hi_img col-5 d-flex justify-content-center">
-        <img src="images/blue pink.svg" alt="Background Blue Pink Circles" class="bp_circle">
+        <div class="bp_circle">
         <img src="images/ara_formal.png" alt="Ara CE Formal" class="formal_ara">
+        </div>
       </div>
     </div>
       
     <div id="work" class="row mr-0 ml-0 flex-column align-content-center">
       <h3 id="portfolio" class="title">PORTFOLIO</h3>
       
-      <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+      <div id="portfolioCarousel" class="carousel slide" data-ride="carousel"  data-pause="hover" data-interval="20000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div id="tnw" class="row d-flex align-items-center portfolio_section">
@@ -139,9 +140,15 @@
               <div class="right flex-column align-self-center col-4 pr-0 pl-0">
                 <h3>Shasa Webscraper</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea officia dicta, architecto magni sed in reprehenderit dolores voluptas. Distinctio totam rerum culpa natus reiciendis fugit laborum labore unde maiores qui!
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptas omnis, reiciendis animi illo nostrum incidunt nihil quia doloremque ipsam harum soluta perferendis, distinctio totam ea praesentium nobis a dignissimos!
-                  Lorem ipsum dolor expedita quod nostrum accusantium ipsam repellat?
+                  This specific web scraper is built to extract data from The Online Clothing Store Shasa.
+                  The Data to be extracted is: </p>
+                  <ul type="square" class="description description_list">
+                    <li>The Item Name</li>
+                    <li>The Item Price</li>
+                    <li>The Item URL</li>
+                  </ul>
+                  <p class="description">
+                  Online shopping can be quite annoying sometimes, because it just throws everything at you. So web scraping simplifies that task by allowing me to scrape what I love the most from a clothing store...T-SHIRTS!
                 </p>
                 <div class="built_with">
                   <p>Built With:</p>
@@ -174,10 +181,15 @@
               <div class="right flex-column align-self-center col-4 pr-0 pl-0">
                 <h3>Tic Tac Toe</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea officia dicta, architecto magni sed in reprehenderit dolores voluptas. Distinctio totam rerum culpa natus reiciendis fugit laborum labore unde maiores qui!
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptas omnis, reiciendis animi illo nostrum incidunt nihil quia doloremque ipsam harum soluta perferendis, distinctio totam ea praesentium nobis a dignissimos!
-                  Lorem ipsum dolor expedita quod nostrum accusantium ipsam repellat?
+                  A Ruby implementation of the loved Tic Tac Toe game. This game is built with 4 classes:
                 </p>
+                <ul type="square" class="description description_list">
+                  <li>Game</li>
+                  <li>Player</li>
+                  <li>Desicion Maker</li>
+                  <li>Board</li>
+                </ul>
+                <p class="description">Each class evaluates the process of the tic tac toe game from the user input, to checking what spaces are available, and outputing the user selection process. The menu for the positions that are available is created with TTY-Prompt, a nifty gem that facilitates the getting and validation of inputs! </p>
                 <div class="built_with">
                   <p>Built With:</p>
                   <span class="ruby bw jade-bck">Ruby</span>
@@ -209,9 +221,7 @@
               <div class="right flex-column align-self-center col-4 pr-0 pl-0">
                 <h3>Ellamexicana</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea officia dicta, architecto magni sed in reprehenderit dolores voluptas. Distinctio totam rerum culpa natus reiciendis fugit laborum labore unde maiores qui!
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptas omnis, reiciendis animi illo nostrum incidunt nihil quia doloremque ipsam harum soluta perferendis, distinctio totam ea praesentium nobis a dignissimos!
-                  Lorem ipsum dolor expedita quod nostrum accusantium ipsam repellat?
+                  This is my Rails Capstone Project-Articles: EllaMexicana is an online Magazine that Empowers, Celebrates and Uplifts Mexican women specially those in the Technology and Science fields. This project demonstrates a User Role system giving the web application and native application feel all within the browser. I used Rails generators to help scaffold views. The app features the CRUD principle for Categories, Users, & Articles. You can also vote for your favorite article.
                 </p>
                 <div class="built_with">
                   <p>Built With:</p>
@@ -292,7 +302,7 @@
                             Or do you have a cool project that you want me to dive into?
                             Feel free to get in touch!
           </p>
-          <a href="files/Araceli_Camarillo_Resume.pdf" download="Araceli_Camarillo_Estudillo_Resume" class="resume_button"><span>Download CV</span></a>
+          <a href="files/Araceli_Camarillo_Resume.pdf" download="Araceli_Camarillo_Estudillo_Resume" class="resume_button" target="_blank"><span>Download CV</span></a>
         </div>
       </div>
 
@@ -306,11 +316,11 @@
         <i class="fas fa-chevron-circle-up"></i>
       </a>
       <div class="sm_icons footer_sm">
-        <a href="https://twitter.com/Ara_CE_93" class="icon_li pinker"><i class="fab fa-twitter-square icon"></i></a>
-        <a href=" www.linkedin.com/in/ara-camarillo" class="icon_li blue"><i class="fab fa-linkedin icon"></i></a>
-        <a href="https://github.com/aracelicaes" class="icon_li yellow"><i class="fab fa-github-square icon"></i></a>
-        <a href="https://www.instagram.com/aracelicaes/" class="icon_li green"><i class="fab fa-instagram icon"></i></a>
-        <a href="mailto:arace0393@gmail.com" class="icon_li pink"><i class="fas fa-envelope icon"></i></a>
+        <a href="https://twitter.com/Ara_CE_93" class="icon_li pinker" target="_blank"><i class="fab fa-twitter-square icon"></i></a>
+        <a href="https://www.linkedin.com/in/ara-camarillo/" class="icon_li blue" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+        <a href="https://github.com/aracelicaes" class="icon_li yellow" target="_blank"><i class="fab fa-github-square icon"></i></a>
+        <a href="https://www.instagram.com/aracelicaes/" class="icon_li green" target="_blank"><i class="fab fa-instagram icon"></i></a>
+        <a href="mailto:arace0393@gmail.com" class="icon_li pink" target="_blank"><i class="fas fa-envelope icon"></i></a>
       </div>
       <span class="copyright">&copy; 2021</span>
     </div>

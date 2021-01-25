@@ -3539,7 +3539,7 @@ readers do not read off random characters that represent icons */
   content: "\f11a";
 }
 
-.fa-meh-blank:before {
+.fa-meh-_blank:before {
   content: "\f5a4";
 }
 
@@ -6315,6 +6315,8 @@ a {
 .see_work:hover {
   cursor: pointer;
   border: 0.25rem solid #00a1a7;
+  color: #00a1a7;
+  text-decoration: none;
 }
 
 .see_work p {
@@ -6327,10 +6329,12 @@ a {
 
 .see_work p:hover {
   color: #00a1a7;
+  text-decoration: none;
 }
 
 .more_about {
   background-color: #d9489c;
+  color: #222129;
   padding-top: 0.95rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -6339,6 +6343,8 @@ a {
 .more_about:hover {
   cursor: pointer;
   background-color: #f5bdc6;
+  color: #222129;
+  text-decoration: none;
 }
 
 .more_about p {
@@ -6354,20 +6360,23 @@ a {
   margin-right: 0.8rem;
 }
 
-.hi_img {
-  padding-right: 2.5rem;
-}
-
 .bp_circle {
+  background-image: url("../images/blue pink.svg");
+  margin-right: 1.5rem;
+  margin-top: 0.6rem;
   width: 30rem;
+  height: 27rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .formal_ara {
-  position: absolute;
   width: 22rem;
-  top: 2.8rem;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 10%;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
 }
 
 .title {
@@ -6387,6 +6396,7 @@ a {
 .right_arrow {
   font-size: 4rem;
   cursor: pointer;
+  color: #222129;
 }
 
 .circle {
@@ -6433,6 +6443,10 @@ a {
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+}
+
+.right .description_list {
+  margin-left: 3rem;
 }
 
 .built_with {
@@ -6724,5 +6738,40 @@ a {
   height: 15rem;
   margin-top: 6.5rem;
   margin-left: 2.5rem;
+}
+
+.icons_display {
+  width: 50rem !important;
+  margin-bottom: 1rem;
+}
+
+.icon_box {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.icon_box img {
+  width: 64px;
+  height: 50px;
+}
+
+.icon_name {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.thanks_li {
+  text-decoration: none;
+  color: #d9489c;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.thanks_li:hover {
+  color: #00a1a7;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
