@@ -58,6 +58,19 @@ $layout-breakpoint-extra-large: 1600px;
 
 html {
   font-size: 16px;
+
+  @media screen and (max-width: 1100px) and (min-width: 900px) {
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 1100px) {
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 1250px) {
+    font-size: 16px;
+  }
+
 }
 
 h1,
