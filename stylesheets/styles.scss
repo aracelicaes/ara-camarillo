@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-$white: #ffffff;
+$white: #fff;
 $cornflower: #6fa8dc;
 $dark_purple: rgb(87, 11, 87);
 $puce: #d9b3d9;
@@ -17,7 +17,7 @@ $jade: #84d0d1;
 $mint: #78d8da;
 $yellow: #ffc77c;
 $light_grey: #f0f0f0;
-$dark_grey: #bbbbbb;
+$dark_grey: #bbb;
 $black: #222129;
 
 @mixin yeseva {
@@ -70,7 +70,6 @@ html {
   @media screen and (min-width: 1250px) {
     font-size: 16px;
   }
-
 }
 
 h1,
@@ -164,6 +163,7 @@ a {
 
 .light_nav_logo {
   text-align: center;
+
   h1 {
     letter-spacing: 0.5rem;
   }
@@ -187,7 +187,7 @@ a {
   a {
     list-style-type: none;
     margin-right: 3rem;
-    
+
     @include yeseva;
 
     font-size: 1.2rem;
@@ -197,12 +197,11 @@ a {
   #contact_top {
     margin-right: 0;
   }
- 
+
   a:active {
     border-bottom: 0.15rem solid $rose_pink;
     color: $rose_pink;
   }
-
 }
 
 // GREETING
@@ -218,6 +217,7 @@ a {
 
 .intro {
   @include poppins-medium;
+
   line-height: 2rem;
   margin-top: 1rem;
 }
@@ -242,6 +242,7 @@ a {
 
   p {
     @include poppins-medium;
+
     color: $black;
     margin-bottom: 0.8rem !important;
     font-size: 18px;
@@ -251,7 +252,6 @@ a {
       text-decoration: none;
     }
   }
-
 }
 
 .more_about {
@@ -270,6 +270,7 @@ a {
 
   p {
     @include poppins-medium;
+
     margin-bottom: 0 !important;
     font-size: 18px;
   }
@@ -338,7 +339,7 @@ a {
   position: absolute;
   top: 7rem;
   left: 4rem;
-  z-index: 0
+  z-index: 0;
 }
 
 .circle2 {
@@ -373,11 +374,11 @@ a {
   .description_list {
     margin-left: 3rem;
   }
-
 }
 
 .built_with {
   @include poppins-medium;
+
   margin-bottom: 1rem;
 }
 
@@ -409,6 +410,7 @@ a {
 
   .lv {
     background-color: $black;
+
     &:hover {
       color: $white;
       text-decoration: none;
@@ -526,7 +528,6 @@ a {
     color: $black;
   }
 }
-
 
 // FOOTER
 
@@ -646,7 +647,7 @@ a {
   border-bottom-right-radius: 8rem;
   width: 20rem;
   margin-left: 5rem;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 
 .friday_karaoke {
@@ -679,6 +680,7 @@ a {
 
 .icon_name {
   @include poppins-medium;
+
   font-size: 0.8rem;
   margin-top: 0.5rem;
 }
